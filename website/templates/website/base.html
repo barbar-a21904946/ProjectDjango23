@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<header class="jumbotron text-center">
+    <h1>Django WebSite</h1>
+    <p>
+        Boas, sejam bem-vindos ao novo website django
+    </p>
+    <nav>
+        <a href="{% url 'website:home' %}" class="btn btn-info">Home>
+
+        </a>
+        <a href="{% url 'website:historia' %}" class="btn btn-info">História>
+
+        </a>
+        <a href="{% url 'website:explorar' %}" class="btn btn-info">Explorar!>
+
+        </a>
+    </nav>
+
+</header>
+<article class="container">
+    <main class="col-sm-6">
+        {% block main %}
+        {% endblock main %}
+    </main>
+    <aside class="col-sm-6" >
+<img>
+    </aside>
+</article>
+<footer>
+Criadora: Bárbara Quaresma
+</footer>
+</body>
+</html>
