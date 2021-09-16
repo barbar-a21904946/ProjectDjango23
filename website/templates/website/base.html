@@ -1,67 +1,24 @@
-{% load static %}
-<!DOCTYPE html>
-<!-- templates/base.html -->
 
+<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MareNostrum</title>
-    <link rel="stylesheet"  href="paginaEstilos.css">
+    <link rel="stylesheet"  href="./paginaEstilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
 </head>
-<body>
-
-<header class="jumbotron text-center">
-
-    <h1>MareNostrum!</h1>
-    <p>
-      Bem vindo(a) á plataforma MareNosTrum, uma web app que nos permite saber todas as informações em direto do mar portugues!
-    </p>
-    <nav>
-        <a href="{% url 'website:home' %}" class="btn btn-info">Home>
-
-        </a>
-        <a href="{% url 'website:historia' %}" class="btn btn-info"> A nossa História>
-
-        </a>
-        <a href="{% url 'website:explorar' %}" class="btn btn-info">Explorar>
-
-        </a>
-        <a href="{% url 'website:sobre' %}" class="btn btn-info">Sobre>
-
-        </a>
-        <a href="{% url 'website:contacto' %}" class="btn btn-info">Contacto>
-
-        </a>
-        <a href="{% url 'website:comentario' %}" class="btn btn-info">Comentário>
-
-        </a>
-        <a href="{% url 'website:quizz' %}" class="btn btn-info">Quizz>
-
-        </a>
-        </a>
-        <a href="{% url 'website:login' %}" class="btn btn-info">Login>
-
-        </a>
-        </a>
-        <a href="{% url 'website:registo' %}" class="btn btn-info">Registo>
-
-        </a></a>
-
-
-
-
-    </nav>
-  <a href="./index.html">
+<header>
+    <a href="./index.html">
         <img src="./imagens/MareNostrum.png" alt="Logotipo" >
     </a>
+
 </header>
+<body>
 <h1>MareNostrum</h1>
 
     <nav>
@@ -93,18 +50,6 @@
     </main>
 
 
-<article class="container">
-    <main class="col-sm-6">
-        {% block main %}
-        {% endblock main %}
-    </main>
-    <aside class="col-sm-6" >
-<img>
-    </aside>
-</article>
-<footer>
-    web-site
-     Criadora: Bárbara Quaresma
-</footer>
+
 </body>
 </html>
